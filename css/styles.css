@@ -1,0 +1,221 @@
+/*
+ *      outset/css/styles.css
+ *      
+ */
+
+:root {
+    --color-bg:     #ffd2b4;
+    --color-beta:   #0F799A;
+    --color-alpha:  #4daeee;
+    --color-gamma:  #98C1D9;
+    --color-white:  #E0FBFC;
+}
+
+
+body {
+    margin: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    background-image: linear-gradient(var(--color-beta), var(--color-beta) 30px, var(--color-bg) 100vh);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white)
+}
+
+a.acont {
+    color: var(--color-beta);
+}
+
+/*
+ *          Header Styles
+ */
+
+
+
+span {
+    color: var(--color-alpha);
+}
+
+header {
+    display: flex;
+    justify-content: left;
+    color: var(--color-bg);
+}
+
+li {
+    display: inline-block;
+    padding-inline-end: 1.3rem;
+}
+
+/*
+ *          Hero Styles
+ */
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 6rem;
+    margin-top: 2em;
+    font-family: 'Raleway', sans-serif;
+}
+
+p.header {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+section.hero {
+    color: var(--color-white);
+    height: 90vh;
+    justify-content: center;
+}
+
+.figure-row {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 4em;
+}
+
+.arrow {
+    bottom: 2em;
+    left: calc(50vw - 35px);
+    position: absolute;
+    stroke: var(--color-beta)
+}
+
+/*
+ *          Projects Styles
+ */
+
+h2 {
+    color: var(--color-beta);
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.title {
+    color: var(--color-alpha);
+    font-size: 1.2rem;
+}
+
+.desc {
+    padding-left: 1em;
+}
+
+ /*
+  *         Employment Styles
+  */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+figure {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 475px;
+  min-width: 375px;
+  height: 667px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+  background-image: linear-gradient(var(--color-beta),purple, pink);
+}
+
+.e-card {
+    width: 675px;
+    min-width: 475px;
+}
+
+figure:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+figure:hover h1 {
+  opacity: 0;
+  transform: scale(0.7);
+}
+figure:hover img {
+  transform: scale(1.25);
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+
+}
+figure:hover figcaption {
+  bottom: 0;
+}
+figure h1 {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+  color: var(--color-white);
+  text-shadow: 1px 1px 2px grey, 0 0 1px grey, 0 0 0.2px grey;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1;
+  opacity: 1;
+  transform: scale(1);
+  transition: 0.25s ease;
+  z-index: 999;
+}
+
+.e-card h1 {
+    color: var(--color-white);
+}
+
+figure img {
+  height: 100%;
+  transition: 0.25s;
+  align-content: center;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+}
+figure figcaption {
+  position: absolute;
+  bottom: -60%;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  color: white;
+  line-height: 1;
+  transition: 0.25s;
+}
+figure figcaption h3 {
+  margin: 0 0 20px;
+  padding: 0;
+}
+figure figcaption p {
+  font-size: 14px;
+  line-height: 1.75;
+}
+figure figcaption button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 0;
+  padding: 10px 30px;
+  background-color: #1abc9c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}

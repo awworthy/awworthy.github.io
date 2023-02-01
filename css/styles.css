@@ -82,9 +82,9 @@ section.hero {
 }
 
 .arrow {
-    bottom: 2em;
-    left: calc(50vw - 35px);
-    position: absolute;
+    bottom: -10em;
+    left: calc(50vw - 73px);
+    position: relative;
     stroke: var(--color-beta)
 }
 
@@ -121,7 +121,7 @@ h2 {
 
 figure {
   position: relative;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 475px;
